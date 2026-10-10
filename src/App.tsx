@@ -30,7 +30,7 @@ export const App = () => {
             <Link
               to="/people"
               className={classNames('navbar-item', {
-                'has-background-grey-lighter': pathname === '/people',
+                'has-background-grey-lighter': pathname.startsWith('/people'),
               })}
             >
               People
